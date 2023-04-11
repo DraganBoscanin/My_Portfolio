@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Srpski</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .nav-link:hover {
+            color: white;
+
+        }
+
+        #title_page {
+            text-shadow: 6px -6px 8px gray;
+        }
+
+        #DB {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+
+        }
+
+        #Jezik {
+
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+     
+
+        #srp:active {
+            font-weight: bold;
+        }
+
+        #menu_nav {
+            position: absolute;
+            right: 10px;
+            background-color: none;
+        }
+
+        #nav_menu:hover {
+            color: black;
+        }
+
+        #nav_menu1:hover {
+            color: black;
+
+        }
+
+        #nav_menu0:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary-subtle">
+
+    <h1 id="DB">DB</h1>
+
+    <div id="Jezik" class="d-lg-flex d-none">
+        <a id="eng" class="navbar-brand pe-1" href="./index.html">ENG</a> |
+        <a id="srp" class="navbar-brand ps-1" href="./srpski.html">SRP</a>
+    </div>
+    <nav class="navbar d-lg-none  " id="menu_nav">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  ">
+                    <li class="nav-item">
+                        <a id="nav_menu0" class="nav-link " aria-current="page" href="./work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_menu" class="nav-link" href="./resume.html" target="_blank">Resume</a>
+                    <li class="nav-item">
+                        <a id="nav_menu1" class="nav-link" href="#">Contact</a>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 d-none d-lg-grid aling-items-center mt-3 fw-bold " id="menu_bar">
+                <ul class="nav justify-content-center font-monospace ">
+                    <li class="nav-item">
+                        <a class="nav-link active link-dark pe-5 text-uppercase" aria-current="page" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark pe-5 text-uppercase" href="./resume.html"
+                            target="_blank">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark pe-5 text-uppercase" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row p-2 align-items-center">
+            <div class="col-lg-6 p-4 mt-5 mt-lg-1">
+                <img src="./css/images/20200410_230658.jpg" width="550px"
+                    class="border img-fluid shadow p-3 m-3 bg-body-tertiary rounded border-2" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h1 id="title_page" class="fw-bold text-center"> Zdravo, ja sam Dragan i ja sam frontend junior Javascript
+                    developer</h1>
+                <p class=" fw-light pt-3 mb-5 text-center">Ja sam junior Javascript developer sa sedištem u Mladenovcu,
+                    Srbija. Imam 1 godinu komercijalnog iskustva i specijalizovan sam za izradu veb sajtova. Otvoren sam
+                    za nove mogućnosti i zanimljive projekte. </p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-dark  border mt-lg-4 mb-2 ms-3 btn-lg"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="dboscanin@gmail.com">Contact me</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="work" class="btn btn-light btn-lg  border mt-lg-4 mb-2 ">Check my
+                            work</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container  ">
+        <div class="row mt-5">
+            <div class="col">
+                <h2 class="text-center text-uppercase text-dark">Work</h2>
+                <p class="fw-light text-center ">Proverite moj komercijalni i nekomercijalni projekat. <br> Ako imate bilo kakva
+                    pitanja slobodno me pitajte za više informacija.</p>
+            </div>
+        </div>
+        <div class="row mt-lg-5 mb-3">
+            <div class="d-grid gap-2  d-xl-block text-center">
+                <button class="btn btn-danger pe-4 ps-4 ms-5 me-5 " type="button">All</button>
+                <button class="btn btn-light ms-5 me-5 " type="button">Javascript</button>
+                <button class="btn btn-dark ms-5 me-5" type="button">Html</button>
+                <button class="btn btn-dark pe-4 ps-4 ms-5 me-5" type="button">Css</button>
+                <button class="btn btn-dark  ms-5 me-5" type="button">JQuery</button>
+                <button class="btn btn-dark ms-5 me-5" type="button">Bootstrap</button>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center d-none d-lg-flex">
+            <div class="card col-3 text-bg-dark m-2 ">
+                <div class="card-body">
+                    <h5 class="card-title">3D Animation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="https://draganboscanin.github.io/3D_Animacija/" target="_blank" class="btn btn-light">Go My
+                        Animation</a>
+                </div>
+            </div>
+            <div class="card col-3 text-bg-dark m-2 ">
+                <div class="card-body">
+                    <h5 class="card-title">Website demo Euroleague</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <a href="https://draganboscanin.github.io/bootstrap-evroliga/" target="_blank"
+                        class="btn btn-light">Go My DemoWebsite</a>
+
+                </div>
+            </div>
+            <div class="card col-3 text-bg-dark m-2">
+                <div class="card-body">
+                    <h5 class="card-title">My Animation2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="https://draganboscanin.github.io/assignment_animacija2/" target="_blank"
+                        class="btn btn-light">Go My Animation2</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 justify-content-center mb-5 d-none d-lg-flex">
+            <div class="card col-3 text-bg-dark m-2">
+                <div class="card-body">
+                    <h5 class="card-title">Gallery Heading</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="https://draganboscanin.github.io/assignment_gallery_heading/" target="_blank"
+                        class="btn btn-light">Go My Gallery Heading</a>
+                </div>
+            </div>
+            <div class="card col-3 text-bg-dark m-2">
+                <div class="card-body">
+                    <h5 class="card-title">My website</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-light">Go My website</a>
+                </div>
+            </div>
+            <div class="card col-3 text-bg-dark m-2">
+                <div class="card-body">
+                    <h5 class="card-title">My website</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-light">Go My website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./jquery-3.6.4.slim.min.js"></script>
+    <script>
+        const buttonWork = $("#work");
+        const menu = document.getElementById("menu");
+        const menuBar = document.getElementById("menu_bar");
+
+        buttonWork.click(function () {
+            alert("Moj posao")
+
+        })
+
+        menu.addEventListener("click", function () {
+            menuBar.style.display = "block"
+
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
